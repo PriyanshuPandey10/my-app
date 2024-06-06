@@ -1,8 +1,16 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
 const page = () => {
+  const [marks, setmarks] = useState(50)
   return (
-    <div>Hello How are you??</div>
+    <>
+    <h1>My marks were {marks}</h1>
+      <button onClick={()=>{
+        setmarks(80)
+      }}>Update</button>
+    </>
+    
   )
 }
 
