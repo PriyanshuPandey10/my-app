@@ -1,16 +1,14 @@
-'use client'
+"use client"
 import React, { useState } from 'react'
-
+import Header from '@/Components/Header'
 const page = () => {
-  const [marks, setmarks] = useState(50)
+    const [user, setuser] = useState("Priyanshu")
   return (
     <>
-    <h1>My marks were {marks}</h1>
-      <button onClick={()=>{
-        setmarks(80)
-      }}>Update</button>
-    </>
+      < Header user={user} />
+      {user}
     
+    </>
   )
 }
 
